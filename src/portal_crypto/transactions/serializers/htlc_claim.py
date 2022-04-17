@@ -1,6 +1,6 @@
 from binascii import unhexlify
-from portal_crypto.exceptions import PortalSerializerException
 
+from portal_crypto.exceptions import PortalSerializerException
 from portal_crypto.transactions.serializers.base import BaseSerializer
 
 

@@ -7,7 +7,6 @@ from portal_crypto.identity.private_key import PrivateKey
 from portal_crypto.identity.public_key import PublicKey
 from portal_crypto.schnorr import schnorr
 from portal_crypto.transactions.transaction import Transaction
-from portal_crypto.utils.message import Message
 
 
 class BaseTransactionBuilder(object):
