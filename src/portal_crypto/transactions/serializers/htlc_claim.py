@@ -1,0 +1,16 @@
+from binascii import unhexlify
+from portal_crypto.exceptions import PortalSerializerException
+
+from portal_crypto.transactions.serializers.base import BaseSerializer
+
+
+class HtlcClaimSerializer(BaseSerializer):
+    """Serializer handling timelock claim data"""
+
+    def serialize(self):
+        self.bytes_data += unhexlify(self.transaction["asset"]["claim"]["lockTransactionId"])
+        unlock_secret_bytes = unhexlify(self.transaction["asset"]["claim"]["unlockSecret"].encode())
+        if len(unlock_secret_bytes) != 32:
+            raise PortalSerializerException("Unlock secret must be 32 bytes long")
+        self.bytes_data += unlock_secret_bytes
+        return self.bytes_data
