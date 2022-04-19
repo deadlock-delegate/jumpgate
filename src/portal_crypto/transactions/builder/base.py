@@ -5,6 +5,7 @@ from portal_crypto.configuration.fee import get_fee
 from portal_crypto.constants import HTLC_LOCK_EXPIRATION_TYPE, TRANSACTION_TYPE_GROUP
 from portal_crypto.identity.private_key import PrivateKey
 from portal_crypto.identity.public_key import PublicKey
+from portal_crypto.networks.base import Network
 from portal_crypto.schnorr import schnorr
 from portal_crypto.transactions.transaction import Transaction
 
@@ -71,6 +72,9 @@ class BaseTransactionBuilder(object):
 
     def schnorr_verify_multisig(self):
         return self.transaction.verify_schnorr_multisig()
+
+    def set_network(self, network: Network):
+        self.transaction.network = network.version
 
     def set_nonce(self, nonce):
         self.transaction.nonce = nonce
