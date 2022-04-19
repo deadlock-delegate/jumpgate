@@ -11,6 +11,8 @@ requires = [
     "requests >= 2.19.1",
     "backoff >= 1.6.0",
     "flatten_dict >= 0.3.0",
+    # portal
+    "click >= 8.1.2",
 ]
 
 lint_require = [
