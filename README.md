@@ -28,6 +28,7 @@ PYTHONPATH=src/ python src/jumpgate/main.py -f "ark_testnet:235sd asdgjn 0-2o3as
 ### Short term
 - [ ] Wait for enough confirmations
 - [ ] Check locked balances
+- [ ] Write tests for `jumpgate`
 - [ ] Make HTLC lock created by non-initiator shorter than initiators HTLC
 - [ ] Check if tx is accepted and broadcasted as expected and raise error if not
 
