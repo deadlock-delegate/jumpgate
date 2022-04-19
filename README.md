@@ -4,6 +4,7 @@
 
 `pip install ."[dev]"`
 
+**❗ THIS LIBRARY IS STILL UNDER HEAVY DEVELOPMENT AND IS NOT READY TO BE USED WITH REAL FUNDSU ❗**
 
 ### Run a swap 
 
@@ -23,14 +24,14 @@ PYTHONPATH=src/ python src/portal/main.py -f "ark_testnet:235sd asdgjn 0-2o3asfd
 ## TODO
 
 ### Short term
-- [] Wait for enough confirmations
-- [] Check locked balances
-- [] Make HTLC lock created by non-initiator shorter than initiators HTLC
-- [] Check if tx is accepted and broadcasted as expected and raise error if not
+- [ ] Wait for enough confirmations
+- [ ] Check locked balances
+- [ ] Make HTLC lock created by non-initiator shorter than initiators HTLC
+- [ ] Check if tx is accepted and broadcasted as expected and raise error if not
 
 
 ### Other
-- [] Improve UI
-- [] Clearer error messaging
-- [] Add currency symbols or tickers to Networks
-- [] Extend Wallet class to suppor other non-ark based networks (BTC, ETH, SOL, BSC, AVAX)
+- [ ] Improve UI
+- [ ] Clearer error messaging
+- [ ] Add currency symbols or tickers to Networks
+- [ ] Extend Wallet class to suppor other non-ark based networks (BTC, ETH, SOL, BSC, AVAX)
