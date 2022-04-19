@@ -1,11 +1,11 @@
 import backoff
 import requests
 
-from portal_client.exceptions import PortalHTTPException
+from portal_client.exceptions import PortalClientHTTPException
 
 
 def giveup_handler(_):
-    raise PortalHTTPException
+    raise PortalClientHTTPException
 
 
 # This uses the full_jitter algorithm
@@ -47,11 +47,11 @@ class Connection(object):
 
     def _handle_response(self, response):
         if not response.content:
-            raise PortalHTTPException("No content in response", response=response)
+            raise PortalClientHTTPException("No content in response", response=response)
 
         body = response.json()
         if not response.ok:
-            raise PortalHTTPException(
+            raise PortalClientHTTPException(
                 "{} {} {} - {}".format(
                     response.request.method,
                     response.status_code,

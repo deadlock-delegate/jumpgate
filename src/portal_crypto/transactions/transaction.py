@@ -74,7 +74,7 @@ class Transaction(object):
             attribute = getattr(self, key, None)
             if attribute is None:
                 continue
-            # todo: get rid of the bytes check and handle this outside of the to_dict function
+            # TODO: get rid of the bytes check and handle this outside of the to_dict function
             data[key] = attribute.decode() if isinstance(attribute, bytes) else attribute
         return data
 

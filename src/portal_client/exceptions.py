@@ -1,12 +1,12 @@
-class PortalException(Exception):
+class PortalClientException(Exception):
     pass
 
 
-class PortalParameterException(PortalException):
+class PortalClientParameterException(PortalClientException):
     pass
 
 
-class PortalHTTPException(PortalException):
+class PortalClientHTTPException(PortalClientException):
     def __init__(self, *args, **kwargs):
         self.response = kwargs.pop("response", None)
         super().__init__(*args, **kwargs)

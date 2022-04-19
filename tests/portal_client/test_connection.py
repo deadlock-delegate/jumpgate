@@ -3,7 +3,7 @@ import requests
 import responses
 
 from portal_client.connection import Connection
-from portal_client.exceptions import PortalHTTPException
+from portal_client.exceptions import PortalClientHTTPException
 
 
 def test_connection_creation_sets_default_session_headers_and_variables():
@@ -45,7 +45,7 @@ def test_connection_raises_for_request_retry_failure():
 
     connection = Connection("http://127.0.0.1:4003")
 
-    with pytest.raises(PortalHTTPException):
+    with pytest.raises(PortalClientHTTPException):
         connection.get("spongebob")
 
     assert len(responses.calls) == 3
@@ -56,7 +56,7 @@ def test_handle_response_raises_for_no_content_in_response():
 
     connection = Connection("http://127.0.0.1:4003")
     response = requests.get("http://127.0.0.1:4003/spongebob")
-    with pytest.raises(PortalHTTPException) as exception:
+    with pytest.raises(PortalClientHTTPException) as exception:
         connection._handle_response(response)
 
     assert str(exception.value) == "No content in response"
@@ -73,7 +73,7 @@ def test_handle_response_raises_for_success_false_in_response():
 
     connection = Connection("http://127.0.0.1:4003")
     response = requests.get("http://127.0.0.1:4003/spongebob")
-    with pytest.raises(PortalHTTPException) as exception:
+    with pytest.raises(PortalClientHTTPException) as exception:
         connection._handle_response(response)
 
     assert str(exception.value) == "GET 404 http://127.0.0.1:4003/spongebob - Best error ever"
