@@ -1,6 +1,8 @@
-# Portal
+# RiftGate
 
-`pyenv virtualenv 3.8.9 portal && echo portal > .python-version`
+A portal between ecosystems.
+
+`pyenv virtualenv 3.8.9 riftgate && echo riftgate > .python-version`
 
 `pip install ."[dev]"`
 
@@ -11,13 +13,13 @@
 USER A (has DARK)
 
 ```bash
-PYTHONPATH=src/ python src/portal/main.py -f "ark_devnet:safdjn asdgjn 0-2o3asfdmkgsadiouaw49k96-:10" -t "ark_testnet:safdjn asdgjn 0-2o3asfdmkgsadiouaw49k96-:10" --initiator
+PYTHONPATH=src/ python src/riftgate/main.py -f "ark_devnet:safdjn asdgjn 0-2o3asfdmkgsadiouaw49k96-:10" -t "ark_testnet:safdjn asdgjn 0-2o3asfdmkgsadiouaw49k96-:10" --initiator
 ```
 
 USER B (has TARK)
 
 ```bash
-PYTHONPATH=src/ python src/portal/main.py -f "ark_testnet:235sd asdgjn 0-2o3asfdmkgsadiouaw49k96-:10" -t "ark_devnet:235sd asdgjn 0-2o3asfdmkgsadiouaw49k96-:10"
+PYTHONPATH=src/ python src/riftgate/main.py -f "ark_testnet:235sd asdgjn 0-2o3asfdmkgsadiouaw49k96-:10" -t "ark_devnet:235sd asdgjn 0-2o3asfdmkgsadiouaw49k96-:10"
 ```
 
 

@@ -35,14 +35,14 @@ extras_require = {"dev": requires + tests_require + lint_require}
 setup_requires = ["pytest-runner"] if {"pytest", "test", "ptr"}.intersection(sys.argv) else []
 
 setuptools.setup(
-    name="portal",
-    description="Portal between Ark's Ecosystems",
+    name="riftgate",
+    description="RiftGate: A portal between ecosystems",
     version="0.1.0",
     author="deadlock",
     author_email="consol3@protonmail.com",
-    url="https://github.com/deadlock-delegate/portal",
+    url="https://github.com/deadlock-delegate/riftgate",
     package_dir={"": "src"},
-    # packages=["portal", "portal_client", "portal_crypto"],
+    # packages=["riftgate", "riftclient", "riftcrypto"],
     packages=setuptools.find_packages(exclude=["tests", "tests.*"]),
     install_requires=requires,
     extras_require=extras_require,
