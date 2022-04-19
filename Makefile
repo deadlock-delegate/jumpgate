@@ -6,4 +6,4 @@ fmt:
 
 
 start:
-	PYTHONPATH=src/ python src/portal/main.py
+	PYTHONPATH=src/ python src/jumpgate/main.py

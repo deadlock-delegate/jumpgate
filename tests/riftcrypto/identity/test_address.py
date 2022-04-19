@@ -1,4 +1,4 @@
-from riftcrypto.identity.address import (
+from jumpcrypto.identity.address import (
     address_from_passphrase,
     address_from_private_key,
     address_from_public_key,

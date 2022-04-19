@@ -1,7 +1,7 @@
-from riftcrypto.configuration.network import set_network
-from riftcrypto.constants import TRANSACTION_DELEGATE_REGISTRATION, TRANSACTION_TYPE_GROUP
-from riftcrypto.networks.devnet import ArkDevnet
-from riftcrypto.transactions.builder.delegate_registration import DelegateRegistration
+from jumpcrypto.configuration.network import set_network
+from jumpcrypto.constants import TRANSACTION_DELEGATE_REGISTRATION, TRANSACTION_TYPE_GROUP
+from jumpcrypto.networks.devnet import ArkDevnet
+from jumpcrypto.transactions.builder.delegate_registration import DelegateRegistration
 
 set_network(ArkDevnet)
 

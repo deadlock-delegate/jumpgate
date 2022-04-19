@@ -1,5 +1,5 @@
-from riftcrypto.configuration.fee import get_fee, set_fee
-from riftcrypto.constants import TRANSACTION_FEES, TRANSACTION_TRANSFER
+from jumpcrypto.configuration.fee import get_fee, set_fee
+from jumpcrypto.constants import TRANSACTION_FEES, TRANSACTION_TRANSFER
 
 
 def test_get_fee():

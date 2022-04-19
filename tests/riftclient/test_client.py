@@ -1,5 +1,5 @@
-from riftclient.client import PortalClient
-from riftclient.connection import Connection
+from jumpclient.client import PortalClient
+from jumpclient.connection import Connection
 
 
 def test_client_creation_calls_import_api(mocker):

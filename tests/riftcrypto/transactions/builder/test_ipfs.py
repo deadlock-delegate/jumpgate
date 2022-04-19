@@ -1,9 +1,9 @@
 from base58 import b58encode
 
-from riftcrypto.configuration.network import set_network
-from riftcrypto.constants import TRANSACTION_IPFS, TRANSACTION_TYPE_GROUP
-from riftcrypto.networks.devnet import ArkDevnet
-from riftcrypto.transactions.builder.ipfs import IPFS
+from jumpcrypto.configuration.network import set_network
+from jumpcrypto.constants import TRANSACTION_IPFS, TRANSACTION_TYPE_GROUP
+from jumpcrypto.networks.devnet import ArkDevnet
+from jumpcrypto.transactions.builder.ipfs import IPFS
 
 set_network(ArkDevnet)
 

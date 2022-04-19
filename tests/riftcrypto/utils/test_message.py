@@ -1,6 +1,6 @@
 import json
 
-from riftcrypto.utils.message import Message
+from jumpcrypto.utils.message import Message
 
 
 def test_signing(message):

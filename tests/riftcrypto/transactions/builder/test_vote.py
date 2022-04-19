@@ -1,7 +1,7 @@
-from riftcrypto.configuration.network import set_network
-from riftcrypto.constants import TRANSACTION_TYPE_GROUP, TRANSACTION_VOTE
-from riftcrypto.networks.devnet import ArkDevnet
-from riftcrypto.transactions.builder.vote import Vote
+from jumpcrypto.configuration.network import set_network
+from jumpcrypto.constants import TRANSACTION_TYPE_GROUP, TRANSACTION_VOTE
+from jumpcrypto.networks.devnet import ArkDevnet
+from jumpcrypto.transactions.builder.vote import Vote
 
 set_network(ArkDevnet)
 

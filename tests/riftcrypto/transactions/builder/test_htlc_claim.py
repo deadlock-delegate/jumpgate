@@ -2,11 +2,11 @@ import binascii
 
 import pytest
 
-from riftcrypto.configuration.network import set_network
-from riftcrypto.constants import TRANSACTION_HTLC_CLAIM, TRANSACTION_TYPE_GROUP
-from riftcrypto.exceptions import PortalSerializerException
-from riftcrypto.networks.devnet import ArkDevnet
-from riftcrypto.transactions.builder.htlc_claim import HtlcClaim
+from jumpcrypto.configuration.network import set_network
+from jumpcrypto.constants import TRANSACTION_HTLC_CLAIM, TRANSACTION_TYPE_GROUP
+from jumpcrypto.exceptions import PortalSerializerException
+from jumpcrypto.networks.devnet import ArkDevnet
+from jumpcrypto.transactions.builder.htlc_claim import HtlcClaim
 
 set_network(ArkDevnet)
 

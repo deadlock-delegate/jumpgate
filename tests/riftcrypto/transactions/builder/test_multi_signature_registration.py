@@ -1,7 +1,7 @@
-from riftcrypto.configuration.network import set_network
-from riftcrypto.constants import TRANSACTION_MULTI_SIGNATURE_REGISTRATION, TRANSACTION_TYPE_GROUP
-from riftcrypto.networks.devnet import ArkDevnet
-from riftcrypto.transactions.builder.multi_signature_registration import MultiSignatureRegistration
+from jumpcrypto.configuration.network import set_network
+from jumpcrypto.constants import TRANSACTION_MULTI_SIGNATURE_REGISTRATION, TRANSACTION_TYPE_GROUP
+from jumpcrypto.networks.devnet import ArkDevnet
+from jumpcrypto.transactions.builder.multi_signature_registration import MultiSignatureRegistration
 
 set_network(ArkDevnet)
 

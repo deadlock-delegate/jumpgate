@@ -1,7 +1,7 @@
-from riftcrypto.configuration.network import set_network
-from riftcrypto.constants import TRANSACTION_DELEGATE_RESIGNATION, TRANSACTION_TYPE_GROUP
-from riftcrypto.networks.devnet import ArkDevnet
-from riftcrypto.transactions.builder.delegate_resignation import DelegateResignation
+from jumpcrypto.configuration.network import set_network
+from jumpcrypto.constants import TRANSACTION_DELEGATE_RESIGNATION, TRANSACTION_TYPE_GROUP
+from jumpcrypto.networks.devnet import ArkDevnet
+from jumpcrypto.transactions.builder.delegate_resignation import DelegateResignation
 
 set_network(ArkDevnet)
 

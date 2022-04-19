@@ -1,6 +1,6 @@
 import pytest
 
-from riftcrypto.transactions.deserializer import Deserializer
+from jumpcrypto.transactions.deserializer import Deserializer
 
 
 def test_transfer_deserializer():

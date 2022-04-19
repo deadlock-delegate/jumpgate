@@ -1,4 +1,4 @@
-from riftcrypto.identity.wif import wif_from_passphrase
+from jumpcrypto.identity.wif import wif_from_passphrase
 
 
 def test_wif_from_passphrase(identity):

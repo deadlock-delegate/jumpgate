@@ -1,9 +1,9 @@
 from datetime import datetime
 
-from riftcrypto.configuration.network import get_network, set_custom_network, set_network
-from riftcrypto.networks.devnet import ArkDevnet
-from riftcrypto.networks.mainnet import ArkMainnet
-from riftcrypto.networks.testnet import ArkTestnet
+from jumpcrypto.configuration.network import get_network, set_custom_network, set_network
+from jumpcrypto.networks.devnet import ArkDevnet
+from jumpcrypto.networks.mainnet import ArkMainnet
+from jumpcrypto.networks.testnet import ArkTestnet
 
 
 def test_get_network():

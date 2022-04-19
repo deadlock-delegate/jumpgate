@@ -1,5 +1,5 @@
-from riftclient.connection import Connection
-from riftclient.resource import Resource
+from jumpclient.connection import Connection
+from jumpclient.resource import Resource
 
 
 def test_request_get_calls_connection_get_with_correct_params(mocker):

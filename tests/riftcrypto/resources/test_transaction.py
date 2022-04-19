@@ -1,4 +1,4 @@
-from riftcrypto.transactions.transaction import Transaction
+from jumpcrypto.transactions.transaction import Transaction
 
 
 def test_transaction_serialize(transaction_type_0):

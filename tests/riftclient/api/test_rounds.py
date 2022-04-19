@@ -1,6 +1,6 @@
 import responses
 
-from riftclient import PortalClient
+from jumpclient import PortalClient
 
 
 def test_delegates_calls_correct_url():

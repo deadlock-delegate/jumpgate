@@ -42,7 +42,7 @@ setuptools.setup(
     author_email="consol3@protonmail.com",
     url="https://github.com/deadlock-delegate/riftgate",
     package_dir={"": "src"},
-    # packages=["riftgate", "riftclient", "riftcrypto"],
+    # packages=["jumpgate", "jumpclient", "jumpcrypto"],
     packages=setuptools.find_packages(exclude=["tests", "tests.*"]),
     install_requires=requires,
     extras_require=extras_require,

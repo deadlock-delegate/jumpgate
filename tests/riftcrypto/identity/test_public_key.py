@@ -1,4 +1,4 @@
-from riftcrypto.identity.public_key import PublicKey
+from jumpcrypto.identity.public_key import PublicKey
 
 
 def test_private_key_from_passphrase(identity):

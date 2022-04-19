@@ -1,11 +1,11 @@
 import pytest
 
-from riftcrypto.configuration.network import set_network
-from riftcrypto.constants import TRANSACTION_TRANSFER, TRANSACTION_TYPE_GROUP
-from riftcrypto.identity.public_key import PublicKey
-from riftcrypto.networks.devnet import ArkDevnet
-from riftcrypto.networks.testnet import ArkTestnet
-from riftcrypto.transactions.builder.transfer import Transfer
+from jumpcrypto.configuration.network import set_network
+from jumpcrypto.constants import TRANSACTION_TRANSFER, TRANSACTION_TYPE_GROUP
+from jumpcrypto.identity.public_key import PublicKey
+from jumpcrypto.networks.devnet import ArkDevnet
+from jumpcrypto.networks.testnet import ArkTestnet
+from jumpcrypto.transactions.builder.transfer import Transfer
 
 set_network(ArkDevnet)
 

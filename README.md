@@ -1,8 +1,8 @@
-# RiftGate
+# JumpGate
 
 A portal between ecosystems.
 
-`pyenv virtualenv 3.8.9 riftgate && echo riftgate > .python-version`
+`pyenv virtualenv 3.8.9 jumpgate && echo jumpgate > .python-version`
 
 `pip install ."[dev]"`
 
@@ -13,13 +13,13 @@ A portal between ecosystems.
 USER A (has DARK)
 
 ```bash
-PYTHONPATH=src/ python src/riftgate/main.py -f "ark_devnet:safdjn asdgjn 0-2o3asfdmkgsadiouaw49k96-:10" -t "ark_testnet:safdjn asdgjn 0-2o3asfdmkgsadiouaw49k96-:10" --initiator
+PYTHONPATH=src/ python src/jumpgate/main.py -f "ark_devnet:safdjn asdgjn 0-2o3asfdmkgsadiouaw49k96-:10" -t "ark_testnet:safdjn asdgjn 0-2o3asfdmkgsadiouaw49k96-:10" --initiator
 ```
 
 USER B (has TARK)
 
 ```bash
-PYTHONPATH=src/ python src/riftgate/main.py -f "ark_testnet:235sd asdgjn 0-2o3asfdmkgsadiouaw49k96-:10" -t "ark_devnet:235sd asdgjn 0-2o3asfdmkgsadiouaw49k96-:10"
+PYTHONPATH=src/ python src/jumpgate/main.py -f "ark_testnet:235sd asdgjn 0-2o3asfdmkgsadiouaw49k96-:10" -t "ark_devnet:235sd asdgjn 0-2o3asfdmkgsadiouaw49k96-:10"
 ```
 
 

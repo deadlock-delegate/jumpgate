@@ -2,8 +2,8 @@ import pytest
 import requests
 import responses
 
-from riftclient.connection import Connection
-from riftclient.exceptions import PortalClientHTTPException
+from jumpclient.connection import Connection
+from jumpclient.exceptions import PortalClientHTTPException
 
 
 def test_connection_creation_sets_default_session_headers_and_variables():

@@ -1,4 +1,4 @@
-from riftcrypto.identity.private_key import PrivateKey
+from jumpcrypto.identity.private_key import PrivateKey
 
 
 def test_private_key_from_passphrase(identity):

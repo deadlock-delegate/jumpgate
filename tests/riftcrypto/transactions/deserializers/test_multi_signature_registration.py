@@ -1,4 +1,4 @@
-from riftcrypto.transactions.deserializer import Deserializer
+from jumpcrypto.transactions.deserializer import Deserializer
 
 
 def test_multi_signature_registration_deserializer():

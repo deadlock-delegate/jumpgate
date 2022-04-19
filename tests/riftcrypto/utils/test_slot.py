@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from riftcrypto.utils.slot import get_epoch, get_time
+from jumpcrypto.utils.slot import get_epoch, get_time
 
 
 def test_get_epoch():
